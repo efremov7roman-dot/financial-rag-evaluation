@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-rag"
+version = "0.1.0"
+description = "Evaluation-first retrieval system for financial filings"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Financial RAG contributors" }]
+dependencies = [
+    "beautifulsoup4>=4.12,<5",
+    "fastembed>=0.7,<1",
+    "fastapi>=0.115,<1",
+    "httpx>=0.28,<1",
+    "numpy>=1.26,<2.3",
+    "pydantic-settings>=2.7,<3",
+    "structlog>=24.4,<26",
+    "typer>=0.15,<1",
+    "uvicorn>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.14,<2",
+    "pytest>=8.3,<9",
+    "ruff>=0.9,<1",
+]
+
+[project.scripts]
+financial-rag = "financial_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+extend-exclude = [".python", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src", "tests"]
+pretty = true
+show_error_codes = true

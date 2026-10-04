@@ -1,0 +1,7 @@
+*.json -text whitespace=cr-at-eol
+*.jsonl -text whitespace=cr-at-eol
+*.md text eol=lf
+PROJECT_SPEC.md whitespace=-blank-at-eof
+*.py text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf

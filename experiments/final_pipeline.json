@@ -1,0 +1,704 @@
+{
+  "configuration": {
+    "bm25_candidates": 30,
+    "dense_candidates": 30,
+    "metadata_filters": true,
+    "reranker": false,
+    "rrf_k": 60,
+    "temporal_filters": true,
+    "top_k": 10
+  },
+  "corpus_fingerprint": "503e6dd849c9ceca539f8629bd57df85a996473943bc8751807a298741f702ec",
+  "dataset_fingerprint": "744e632d6f11abc28c6b3e1b4f57752411dcad75c7195a5666e6ce42bef72b15",
+  "evaluated_at": "2026-09-30T01:06:02.453971Z",
+  "experiment_name": "Final (Routed Hybrid)",
+  "failures": [
+    {
+      "category": "WRONG_SECTION",
+      "details": "top result section was Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations",
+      "experiment": "Final (Routed Hybrid)",
+      "question": "How did Apple describe its products, services, and business activities in 2024?"
+    },
+    {
+      "category": "WRONG_SECTION",
+      "details": "top result section was Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations",
+      "experiment": "Final (Routed Hybrid)",
+      "question": "What market risks and sensitivity exposures did Apple report for fiscal 2024?"
+    },
+    {
+      "category": "WRONG_SECTION",
+      "details": "top result section was Item 1. Business",
+      "experiment": "Final (Routed Hybrid)",
+      "question": "What properties did Apple identify in its 2024 annual filing?"
+    }
+  ],
+  "latency": {
+    "mean_ms": 30.058822222296538,
+    "p50_ms": 26.07510000052571,
+    "p95_ms": 52.22290499859808
+  },
+  "metrics": {
+    "mrr": 0.5395061728395061,
+    "ndcg_at_10": 0.31248992528154645,
+    "precision_at_5": 0.3222222222222222,
+    "recall_at_1": 0.4444444444444444,
+    "recall_at_10": 0.8333333333333334,
+    "recall_at_5": 0.6666666666666666
+  },
+  "queries": [
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 29.02430000176537,
+      "question": "What principal risks could materially affect Apple's business and financial condition in its 2024 annual report?",
+      "relevance": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "retrieved_chunk_ids": [
+        "cdf0ad3b4a9be4f3b5c923982dcdbc290be7ff819c2149b558b23bbdd197b5c0",
+        "3f2a63288e229286fb276887eb3692dd48ded009db2e9f4797a8d201e96892b1",
+        "00c6673d60977d9f83bbc7ca18cfbddee4838430a54385f1d1fa2d638427a8e3",
+        "ebd72614b1abcb58b506738ab9cbb58a8450977c4a7e7a8d169316d18bab5977",
+        "69055253db35aa21f32cc3bf50f26055732512c59f1a38c6e5416324a8864f6f",
+        "1ba6fa79d85986df610ce7014942bdd1170312505f4ed529fc1da904512da26e",
+        "7c049a7a2116007d2be4c38fd26349186cfd533f58bfd9ec744becfc683fa48a",
+        "f187248b343309da6df7e0af0ae0fd5758b95f28b0b9c0f7f4bce905308677ec",
+        "5561e2d9d56eb68b1cff7d90ade3bab709fad9d9026c7aeddfc160c3e4cdc303",
+        "821065587a2ad26f91312d71fecd162fbc1608e2e0cfff3b84d1d34dba996ec9"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 16.97000000058324,
+        "dense": 11.706600002071355,
+        "filtering": 0.12700000297627412,
+        "fusion": 0.18420000196783803
+      }
+    },
+    {
+      "first_relevant_rank": null,
+      "latency_ms": 23.999400000320747,
+      "question": "How did Apple describe its products, services, and business activities in 2024?",
+      "relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "69055253db35aa21f32cc3bf50f26055732512c59f1a38c6e5416324a8864f6f",
+        "0416d85c7d6f6ff7c3283e5c4c85727831bf56a52eac9797c85ce4173914e562",
+        "2a2fdcd0044b44fd0e42207225e579d818e2bb829efa94a92a5a46c49f5ba03e",
+        "50747501e788085ca792f448104ce3c892d6a30ef7eda1de8ce81f9050f7fa13",
+        "7c049a7a2116007d2be4c38fd26349186cfd533f58bfd9ec744becfc683fa48a",
+        "02b33210eef9c34cd7dff738d61583e66fced77fe724adc53fe2884382762897",
+        "0ff4ab0c03e6887e5439c6a1a9d23de238cfabfc0f4928d5305056ea66271bbe",
+        "21d00c2b7b9aab776a055a1abcb13e1f67f85273c4a018a5e39956da120c60bd",
+        "396d75953f9cbd5bcd7d9b4fa32049d4b89b11aa5571bae9a3b83dc4aaf2d985",
+        "2a33a3a01e56ab2aaf3996ac84d109ce5022f65aef68a052d436ab778c6224ee"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 10.910299999522977,
+        "dense": 12.678600000072038,
+        "filtering": 0.15490000077988952,
+        "fusion": 0.21100000230944715
+      }
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 31.093500001588836,
+      "question": "What factors did management identify as affecting Apple's 2024 net sales performance?",
+      "relevance": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "5561e2d9d56eb68b1cff7d90ade3bab709fad9d9026c7aeddfc160c3e4cdc303",
+        "00c6673d60977d9f83bbc7ca18cfbddee4838430a54385f1d1fa2d638427a8e3",
+        "e0e6e972ee040ae42d6818ef19e42bb42041f9547b96d858028987d4bab1d208",
+        "7b7bd35d27a0683292fa1d1bc679a5d810443155623d7bdcc1ec416e8279e309",
+        "e05356b15f9719d4c1075f35c31c043cf5fdf66db1e1bc49351e7baae3f8e761",
+        "2a2fdcd0044b44fd0e42207225e579d818e2bb829efa94a92a5a46c49f5ba03e",
+        "44073f64271dd8f7982490b23ca6b94bd4f39371b71f10e17f3d9131a11a7e7e",
+        "0ff4ab0c03e6887e5439c6a1a9d23de238cfabfc0f4928d5305056ea66271bbe",
+        "d09dce55ab52a1f0464bd7780cd862ced34b151aa1374b510e6eb625cd588797",
+        "69cce07b3bc89caa460195ed2614f67ae12f985db1bd4200f8c06ab282356ab0"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 10.836500001460081,
+        "dense": 19.97510000001057,
+        "filtering": 0.07870000263210386,
+        "fusion": 0.16619999951217324
+      }
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 35.30790000149864,
+      "question": "How did Apple explain quarterly net sales and operating performance for the period ended June 2024?",
+      "relevance": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "0ff4ab0c03e6887e5439c6a1a9d23de238cfabfc0f4928d5305056ea66271bbe",
+        "7b7bd35d27a0683292fa1d1bc679a5d810443155623d7bdcc1ec416e8279e309",
+        "ab0ac4f5970997b17e7f578f709bf44526e5819cd09b73097777daca813d5231",
+        "d5b9ada3aa5a76412b96f28fe9ba85f528e1d94f39f8e02317860cf82d66ff43",
+        "24619f2428ef10af934a3e62cbde06af0ccdc93745b9fb4590459c511e5901c4",
+        "cf31426bba99594a8b47e1b1c67f6a722118d059e3daa0320868eca9a00d50e0",
+        "2a2fdcd0044b44fd0e42207225e579d818e2bb829efa94a92a5a46c49f5ba03e",
+        "34ca73313cb11af865429d444bcfff2959e1dfa8972f9e3004b803ca40172b0a",
+        "2e980de3a591a66535b324fd6d5fea417eabcf9981fec8cee8f07be837ea0dc4",
+        "c42f182c3bd61e109e303d98bed545563aaf89fa4c7005dec6260d936032baa7"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 14.795600000070408,
+        "dense": 20.11789999960456,
+        "filtering": 0.11319999975967221,
+        "fusion": 0.18500000078347512
+      }
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 28.021800000715302,
+      "question": "How did Apple describe cybersecurity risk management and governance in its 2024 annual report?",
+      "relevance": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "2eca623bc2fb6cf5c581b9b26502ce4b7dddbdba95ad5ae2ea8c64d97a115200",
+        "acf8ba1970b640aee58d60aca4153855a2176452761b4dd2e8ec898c8e247ea9",
+        "0c7cde084cc4403eaed3efae30a115722fd8f21ce69e2f1ed72cfc6d827b56e5",
+        "de5180481b6c15cb0379ec741d58142e5f3f0c6c10d44bcc06e79383d2c2d074",
+        "69055253db35aa21f32cc3bf50f26055732512c59f1a38c6e5416324a8864f6f",
+        "f187248b343309da6df7e0af0ae0fd5758b95f28b0b9c0f7f4bce905308677ec",
+        "7c049a7a2116007d2be4c38fd26349186cfd533f58bfd9ec744becfc683fa48a",
+        "f1c61a5429a0edbc61444de9a5d7220d8759fcce8f9a10e3ba39a31cad7db9a8",
+        "800dc5081f84a12bddce704bd371417e099106f5fd1827ca9058dbfd2450bb2d",
+        "85f015e39faa649d4ce3c30143f886198928558537c4bce2cac6a4620b429f24"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 11.249999999563443,
+        "dense": 16.422499997133855,
+        "filtering": 0.11199999789823778,
+        "fusion": 0.19840000095427968
+      }
+    },
+    {
+      "first_relevant_rank": null,
+      "latency_ms": 50.98889999862877,
+      "question": "What market risks and sensitivity exposures did Apple report for fiscal 2024?",
+      "relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "69055253db35aa21f32cc3bf50f26055732512c59f1a38c6e5416324a8864f6f",
+        "8f1e462ef0be0f5d6241947b036affb6e7afe9cf506ef4d1e3ffa6ffc93af768",
+        "e0e6e972ee040ae42d6818ef19e42bb42041f9547b96d858028987d4bab1d208",
+        "72cac0364ba6680ec2d3345c03504cf81cc9388d202b9945758114c79bf0d7eb",
+        "538009603c5d7bbf285e1530d712e2aa336854fd14b8bac92a55d330dfb74226",
+        "7c049a7a2116007d2be4c38fd26349186cfd533f58bfd9ec744becfc683fa48a",
+        "7b7bd35d27a0683292fa1d1bc679a5d810443155623d7bdcc1ec416e8279e309",
+        "0416d85c7d6f6ff7c3283e5c4c85727831bf56a52eac9797c85ce4173914e562",
+        "21d00c2b7b9aab776a055a1abcb13e1f67f85273c4a018a5e39956da120c60bd",
+        "5561e2d9d56eb68b1cff7d90ade3bab709fad9d9026c7aeddfc160c3e4cdc303"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 10.214899997663451,
+        "dense": 40.42290000143112,
+        "filtering": 0.11670000094454736,
+        "fusion": 0.1967999996850267
+      }
+    },
+    {
+      "first_relevant_rank": null,
+      "latency_ms": 17.511899997771252,
+      "question": "What properties did Apple identify in its 2024 annual filing?",
+      "relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "0c7cde084cc4403eaed3efae30a115722fd8f21ce69e2f1ed72cfc6d827b56e5",
+        "acf8ba1970b640aee58d60aca4153855a2176452761b4dd2e8ec898c8e247ea9",
+        "7c049a7a2116007d2be4c38fd26349186cfd533f58bfd9ec744becfc683fa48a",
+        "68a36a6aea557c7d97151e7e72c0fa9e30eab73229da39cc76a096ca83320e3c",
+        "69055253db35aa21f32cc3bf50f26055732512c59f1a38c6e5416324a8864f6f",
+        "03bddf9a54c5ff89e8d2a559938e498531b4f13e7c72e38337b0a8863002c8bf",
+        "85f015e39faa649d4ce3c30143f886198928558537c4bce2cac6a4620b429f24",
+        "800dc5081f84a12bddce704bd371417e099106f5fd1827ca9058dbfd2450bb2d",
+        "e8bb120d419ab84a690c75f6a6221b5f9b5fd29d94de83755c68cf8cd9574651",
+        "c80c8a8d28abeaf5dd5d0574b2a626a576e3bed39eb15869433445f1d748f8e1"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 8.309500000905246,
+        "dense": 8.864399998856243,
+        "filtering": 0.10009999823523685,
+        "fusion": 0.198199999431381
+      }
+    },
+    {
+      "first_relevant_rank": 4,
+      "latency_ms": 19.12860000084038,
+      "question": "What did Apple conclude about disclosure controls and internal control in 2024?",
+      "relevance": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "076690b8933e3138b0bbb493267bda95c2639c7e020f3a40301b3f574810bba4",
+        "e18f8eb60937bcf28b168d095accda6de7fc2fe88920d3a800f2aa5d5dacafa9",
+        "acf8ba1970b640aee58d60aca4153855a2176452761b4dd2e8ec898c8e247ea9",
+        "f187248b343309da6df7e0af0ae0fd5758b95f28b0b9c0f7f4bce905308677ec",
+        "d36f8b471a43ce27b97ab89295df3b352d700c71591d2fc8f3ca9666f786cefb",
+        "f1c61a5429a0edbc61444de9a5d7220d8759fcce8f9a10e3ba39a31cad7db9a8",
+        "69055253db35aa21f32cc3bf50f26055732512c59f1a38c6e5416324a8864f6f",
+        "03bddf9a54c5ff89e8d2a559938e498531b4f13e7c72e38337b0a8863002c8bf",
+        "7c049a7a2116007d2be4c38fd26349186cfd533f58bfd9ec744becfc683fa48a",
+        "800dc5081f84a12bddce704bd371417e099106f5fd1827ca9058dbfd2450bb2d"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 9.596699997928226,
+        "dense": 9.243900000001304,
+        "filtering": 0.08349999916390516,
+        "fusion": 0.16870000035851263
+      }
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 50.80929999894579,
+      "question": "What drove Apple's net sales and operating results in the quarter ended December 2024?",
+      "relevance": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "2a2fdcd0044b44fd0e42207225e579d818e2bb829efa94a92a5a46c49f5ba03e",
+        "e05356b15f9719d4c1075f35c31c043cf5fdf66db1e1bc49351e7baae3f8e761",
+        "0ff4ab0c03e6887e5439c6a1a9d23de238cfabfc0f4928d5305056ea66271bbe",
+        "7b7bd35d27a0683292fa1d1bc679a5d810443155623d7bdcc1ec416e8279e309",
+        "44073f64271dd8f7982490b23ca6b94bd4f39371b71f10e17f3d9131a11a7e7e",
+        "4b2b0277a201c4ad44d5185fb8e6e30e7c59df895ab899dd9e8597d71c6bd8f0",
+        "42e80b6cad1d0a95ca1473c3f25d229d14c6df0e86013fbaba766f143f60cfec",
+        "d5b9ada3aa5a76412b96f28fe9ba85f528e1d94f39f8e02317860cf82d66ff43",
+        "c42f182c3bd61e109e303d98bed545563aaf89fa4c7005dec6260d936032baa7",
+        "21d00c2b7b9aab776a055a1abcb13e1f67f85273c4a018a5e39956da120c60bd"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 16.63149999876623,
+        "dense": 33.86979999777395,
+        "filtering": 0.08069999603321776,
+        "fusion": 0.19189999875379726
+      }
+    },
+    {
+      "first_relevant_rank": 10,
+      "latency_ms": 20.733500001369976,
+      "question": "How did Apple discuss results of operations for the period ended March 2025?",
+      "relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "retrieved_chunk_ids": [
+        "541ff5824f7703910c57fb6c4b70f3579774b2b287858c34f288bd98372f463d",
+        "4ed27e130a9c284d8b73d6a9d397b1d1fa917f45b2fcb87922a51423bc69e039",
+        "8a79d19fc8d619a8a669d02c67abc413571e3ff5002fec70df6e180b496b7bce",
+        "7fbd3755a5ce3a4e75d2e0514c956814d90c1762569d575a45c3517e7657fd62",
+        "1f744ade9e427de3f9d0967b0376271f0dd4011699565a0b3795739789e746a0",
+        "adcd5520df5f0f6b2207a9c579b9c9fde2cb01f265580be70c57f574a6de70ef",
+        "f34e8f4bdfa3b6b74b18fe34b45b44e6bb84d977bf96be6d8ece9d7ca092016e",
+        "5f847727072831a927b141d1707c854988309f552d0bb1a3e5486dcd077b29b5",
+        "f18a721ea962fc2eca9f045ed7f886dd97563c5d5445b973caa7301667c2a936",
+        "ee57a3a150d34849e401638cbc4755da43664848c879e7390ed533e7a671ade1"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 12.889400000858586,
+        "dense": 7.499699997424614,
+        "filtering": 0.10660000043571927,
+        "fusion": 0.19969999993918464
+      }
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 21.756500002084067,
+      "question": "What factors affected Apple's operating performance for the period ended June 2025?",
+      "relevance": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "203d07090b14bbc1737463e46d9d286b52145746d79bbeb33ea812b4116768ac",
+        "9f1cb92bf6537d57c0da54465a503d111a8c3ace655e86470739763717811fd2",
+        "2984dd41aef0731970879e2f8c7086eba4912127465bdf9f99f23ff20250d31a",
+        "4ed27e130a9c284d8b73d6a9d397b1d1fa917f45b2fcb87922a51423bc69e039",
+        "eff9399d3d3fbe410718375aacbd475aa60239973c2dfd14abb6ad46049822d2",
+        "993edb8b4a4c9eb57c73a6c219489fe9271470d880f561b33e275a30df3427b4",
+        "f970b395493012befcf72b018a8b9e1b117044d2576a14c03a9c04adce3991e5",
+        "561f14d42c0676048214833449ce4c09e55b8aa6350728d6d64bcd634733e63a",
+        "709b1fdfdcb10e74ae951e98a1bdf3f192bc9b8e321dc5ef6a4e66e0a5bb6866",
+        "ce2aad104b1207524553be6ad531ea6139ffa05e927ed13e8407ea01d4a00d50"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 12.761400001181755,
+        "dense": 8.658300001116004,
+        "filtering": 0.10119999933522195,
+        "fusion": 0.1962000023922883
+      }
+    },
+    {
+      "first_relevant_rank": 9,
+      "latency_ms": 17.503499999293126,
+      "question": "What principal business risks did Apple report in its 2025 annual filing?",
+      "relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "e3d86b7c324d895a73c4aa0a057eed55e7fe3bd6da7bf5da24f749977799ed27",
+        "22d26b61bd910c9a40efb0bf93e274680554dd395fd7c97acc469f8f56e47d0b",
+        "d95d14ce92e3d22975f1635cd07a93abec4d1623f7192052915a42051df6665c",
+        "4ed27e130a9c284d8b73d6a9d397b1d1fa917f45b2fcb87922a51423bc69e039",
+        "a41545bb22ebf14431a8be493d0cbb34ff2b0faac8923389108b4c89c6d4d4ee",
+        "f0398725bf0290223437f368f5f84f03214a07015576bcd4dadcca8e7837c90e",
+        "1f744ade9e427de3f9d0967b0376271f0dd4011699565a0b3795739789e746a0",
+        "db3c59fada757c0ed31d5f56bac174be4103d5db3da4129fcd753ef8437bbdfd",
+        "c9a113f508e890a7dc7cc48ddb89a48c820f44a273a027262d4fbca1c2af571d",
+        "e664bc5fed422d6072b2f03fc45636abb424eb638ef4153d5da7f9a7898e8f40"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 9.451099998841528,
+        "dense": 7.532100000389619,
+        "filtering": 0.1664000010350719,
+        "fusion": 0.3152999997837469
+      }
+    },
+    {
+      "first_relevant_rank": 4,
+      "latency_ms": 45.87790000005043,
+      "question": "How did Apple describe its business and product markets in fiscal 2025?",
+      "relevance": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "4ed27e130a9c284d8b73d6a9d397b1d1fa917f45b2fcb87922a51423bc69e039",
+        "2e87add719e0c1afe60c392672dc92f781c8169c971a7b2fc64bfcf20630a89c",
+        "b1af57691a0a9e5b27eaf44212587ca3f90b725e98a3541d8412734f846e2001",
+        "1a70e43f93e635954e3df7a25e2b732a093987464e7bcb65b88e1c9454cfd4cc",
+        "22d26b61bd910c9a40efb0bf93e274680554dd395fd7c97acc469f8f56e47d0b",
+        "7270e2288a8e093ffe8ee3b533f7f266c5b157a3f726b5001ffc0bc24365630a",
+        "3d49e7e29f464df0af763bee85017d6e3598584d7b10eb2d20ae72172e97ef5c",
+        "95d09ee5214fd24f06606febe009cc4bf14007a274a7c65a2139384c03f48085",
+        "347306c6c92ec7e5d56544526c6f597484f6a6f87fe4098ebca8163e9bc2cc92",
+        "541ff5824f7703910c57fb6c4b70f3579774b2b287858c34f288bd98372f463d"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 10.821500000020023,
+        "dense": 34.74379999897792,
+        "filtering": 0.09349999891128391,
+        "fusion": 0.18060000002151355
+      }
+    },
+    {
+      "first_relevant_rank": 3,
+      "latency_ms": 14.862699998047901,
+      "question": "How did Apple govern cybersecurity risks in fiscal 2025?",
+      "relevance": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "4ed27e130a9c284d8b73d6a9d397b1d1fa917f45b2fcb87922a51423bc69e039",
+        "22d26b61bd910c9a40efb0bf93e274680554dd395fd7c97acc469f8f56e47d0b",
+        "b405a2574bfaaf648dac75c15a80042519fef5fbd605afabf3a92e698b0fe805",
+        "c495028fde3eebbd0589e251cb7535e070667a502f0597fab0ec969a189d58fe",
+        "8edfaad59338426241af18b39a411cc8aec7dc1b28d7ddee7fbdb06e1e6637f9",
+        "f34e8f4bdfa3b6b74b18fe34b45b44e6bb84d977bf96be6d8ece9d7ca092016e",
+        "5f847727072831a927b141d1707c854988309f552d0bb1a3e5486dcd077b29b5",
+        "f18a721ea962fc2eca9f045ed7f886dd97563c5d5445b973caa7301667c2a936",
+        "3c9534b681f947adcd9a8704eaca1e4c56d77c75b405c057a3bb039d0c8d1ada",
+        "a41545bb22ebf14431a8be493d0cbb34ff2b0faac8923389108b4c89c6d4d4ee"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 6.739500000549015,
+        "dense": 7.782500000757864,
+        "filtering": 0.09800000407267362,
+        "fusion": 0.20090000180061907
+      }
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 24.128400000336114,
+      "question": "What drove Apple's operating results for the quarter ended December 2025?",
+      "relevance": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "f64fd3f1c538acf86757a3d4330cc8c39dd919c6518932aa32f93d5b2bb731af",
+        "b4fd818e4df3cb3c22f3db0869f1b17ae1a778783728bcb9922c1d8d397f77b8",
+        "c269ba448a9857c3fda988d1a4cbb71acff54006b0bb59bb4e7a8faa99e1e0d3",
+        "9f1d305575a1aa909c09107b2d5c2e115c37b6615586203328bb0739395f00e5",
+        "ba68901e268304c0d3ae994738990fbeca3d02b386a9eca5ab752d06a040866e",
+        "4462a2340b2d6731770165836b7f93bf0301de298f5d0901ecd6e0a7e3644bec",
+        "182637950a96f79a05c8d8009394d10f4f2aee722abb35bdcc3375a50bdfc98f",
+        "7fbd3755a5ce3a4e75d2e0514c956814d90c1762569d575a45c3517e7657fd62",
+        "f970b395493012befcf72b018a8b9e1b117044d2576a14c03a9c04adce3991e5",
+        "ff91ecfc0fb06c50ada2a5cde303c11cb046c9dedcbf97863a8d37eec75ed70a"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 13.750499998423038,
+        "dense": 9.934299996530171,
+        "filtering": 0.0940000027185306,
+        "fusion": 0.31230000240611844
+      }
+    },
+    {
+      "first_relevant_rank": 2,
+      "latency_ms": 59.215599998424295,
+      "question": "How did Apple discuss sales performance for the period ended March 2026?",
+      "relevance": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "retrieved_chunk_ids": [
+        "a21b7e4cc4b1e5fe49fe2ede6caecb1dde20ee9abaf46655dfdf1e82660d913f",
+        "bf03596fedf844cf1909dc60ac3d8bf2eaf1c6891f24d0519ac2b350ee9bc473",
+        "762a7c56805d7b6412a5c4ceddcb2fad146ef66eee126c290976687cfb36de62",
+        "16c1935a501dba70d86d3aa1d13dbf4df7f7c2042b8067edb682ef2a923902b1",
+        "724deda1ad8cb730c47033a3ff5ab4be41eba77dd00136e846a52742288e1534",
+        "d5c013f8c7fa1172f719a7859130dba0068466a2cb2422f31d6e62e74964043f",
+        "5956d7da12f3804b449398b8156a816139acd0cce22ea3f3dc0c5fa318d50f1e",
+        "72c8dad468e4000badcced982be9841760b86e9627433210254a34b5dacdee86",
+        "e4b77b3bb120385f4211473d9ed83e65e9fbd5655a7b74873066e73c80898a01",
+        "f09a787e5ccb68d37f65fd5e9f63b98144cf631e79d00371d9e415430ea47e60"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 11.721599999873433,
+        "dense": 47.21330000029411,
+        "filtering": 0.08049999814829789,
+        "fusion": 0.16229999891947955
+      }
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 32.91299999909825,
+      "question": "What affected Apple's operating performance for the period ended June 2026?",
+      "relevance": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "9971cae002cb196bc7b3ec35703cccf0174f80facb02053a76c6b67dc086a81c",
+        "5956d7da12f3804b449398b8156a816139acd0cce22ea3f3dc0c5fa318d50f1e",
+        "aaafb48b545259fc7e159c8325da7d9b829947ee2207f25e07516e58fa8154cf",
+        "72c8dad468e4000badcced982be9841760b86e9627433210254a34b5dacdee86",
+        "6ad0911368b2181d02af49ebe24a92a7d2754a3ae21eb01be21a56fc4ffd7c39",
+        "398cb6d3452250380c53117e40e1987bc5084d92d0fd701913d04eb05182b399",
+        "7a7e912ec82548cf00fb43de8d6e9b067c8c16fafebdd6cac48c7368db4ea93f",
+        "59b159f8478c2ba3bf88c2b87998aa4b5e9bccb34fe7843180b60de59dc0d534",
+        "f4cfc8dc7b08ad3431307386d20ca27b1cc4af6dc22478f0aa03d7442cc190f6",
+        "1e80e0e630930c3f79e3c7daa00317ec81185486d4fb02b853a97259c04ab1ab"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 11.625099999946542,
+        "dense": 20.985700000892393,
+        "filtering": 0.08739999611862004,
+        "fusion": 0.17659999866737053
+      }
+    },
+    {
+      "first_relevant_rank": 6,
+      "latency_ms": 18.18210000055842,
+      "question": "What risk factors did Apple update for the quarter ended June 2026?",
+      "relevance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "retrieved_chunk_ids": [
+        "9971cae002cb196bc7b3ec35703cccf0174f80facb02053a76c6b67dc086a81c",
+        "724deda1ad8cb730c47033a3ff5ab4be41eba77dd00136e846a52742288e1534",
+        "bf03596fedf844cf1909dc60ac3d8bf2eaf1c6891f24d0519ac2b350ee9bc473",
+        "042f6a1953115c4a1ba996f2ff4c251ff50ab99362e2d71d4ded0a91d89f6454",
+        "72c8dad468e4000badcced982be9841760b86e9627433210254a34b5dacdee86",
+        "ca403204abcd60a27c95122b609c370445b631c1763f79787bf1abb0d7d65df0",
+        "5956d7da12f3804b449398b8156a816139acd0cce22ea3f3dc0c5fa318d50f1e",
+        "a21b7e4cc4b1e5fe49fe2ede6caecb1dde20ee9abaf46655dfdf1e82660d913f",
+        "59b159f8478c2ba3bf88c2b87998aa4b5e9bccb34fe7843180b60de59dc0d534",
+        "d992480cd7daab04510f78b0bcb3abc8f71f05636198d8082fb5485e8325c5ac"
+      ],
+      "stage_latencies_ms": {
+        "bm25": 9.481299999606563,
+        "dense": 8.391899998969166,
+        "filtering": 0.08929999603424221,
+        "fusion": 0.18310000086785294
+      }
+    }
+  ],
+  "query_count": 18,
+  "retrieval_cutoff": 10,
+  "stage_latencies": {
+    "bm25": {
+      "mean_ms": 11.597577777542433,
+      "p50_ms": 11.08014999954321,
+      "p95_ms": 16.682274999038782
+    },
+    "dense": {
+      "mean_ms": 18.11351666623927,
+      "p50_ms": 12.192600001071696,
+      "p95_ms": 41.44146000126056
+    },
+    "filtering": {
+      "mean_ms": 0.10464999973515256,
+      "p50_ms": 0.09905000115395524,
+      "p95_ms": 0.15662500081816685
+    },
+    "fusion": {
+      "mean_ms": 0.20152222269745027,
+      "p50_ms": 0.19405000057304278,
+      "p95_ms": 0.3127500020127627
+    }
+  }
+}

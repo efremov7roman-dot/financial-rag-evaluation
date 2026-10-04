@@ -1,0 +1,11 @@
+services:
+  financial-rag:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      FINANCIAL_RAG_ENVIRONMENT: production
+      FINANCIAL_RAG_LOG_LEVEL: INFO
+    restart: unless-stopped

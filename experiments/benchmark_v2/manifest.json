@@ -1,0 +1,23 @@
+{
+  "answer_questions": 27,
+  "answer_sha256": "c4a9df1929afbc4b04bd398a29c1415e1c9b1ef96d2516b62350774c9b38f2f7",
+  "benchmark_version": "benchmark_v2",
+  "category_distribution": {
+    "company_specific": 19,
+    "cross_period": 19,
+    "exact_financial_terminology": 19,
+    "filing_specific": 19,
+    "narrative_semantic": 19,
+    "numerical_xbrl": 18,
+    "similar_information_across_filings": 18,
+    "temporal": 19
+  },
+  "chunk_count": 9166,
+  "company_count": 6,
+  "construction": "SEC filing provenance, section metadata, and inline XBRL facts; no retrieval outputs",
+  "filing_count": 59,
+  "frozen": true,
+  "integrity_checks": "passed",
+  "retrieval_questions": 150,
+  "retrieval_sha256": "b910b7716c3d43ef2239fde56d24ddf8cda48222ffa627647661b517d7a4ecec"
+}

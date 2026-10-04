@@ -1,0 +1,72 @@
+{
+  "corpus_document_count": 738,
+  "corpus_fingerprint": "503e6dd849c9ceca539f8629bd57df85a996473943bc8751807a298741f702ec",
+  "dataset_fingerprint": "f3909782f948c7452ba215b26033eac8288917ac50ba0e76c96826d27d36db28",
+  "evaluated_at": "2026-09-29T21:52:34.426030Z",
+  "mean_latency_ms": 5.526700000700657,
+  "model_name": "BAAI/bge-small-en-v1.5",
+  "mrr": 0.6458333333333333,
+  "p50_latency_ms": 5.135100002007675,
+  "p95_latency_ms": 6.754949999412928,
+  "queries": [
+    {
+      "first_relevant_rank": 4,
+      "latency_ms": 7.0091999987198506,
+      "question": "What principal risks could materially affect Apple's business and financial condition?",
+      "recall": 1.0,
+      "reciprocal_rank": 0.25,
+      "retrieved_chunk_ids": [
+        "b98ec81a1f5f653122eedd1bb47bfb1eef05e2f35ba10784d15ee6f43090497c",
+        "7270e2288a8e093ffe8ee3b533f7f266c5b157a3f726b5001ffc0bc24365630a",
+        "a839e185ff64829b67e8800643c6a912a446d9d49ea506e5ece4cde67d5ee147",
+        "3f2a63288e229286fb276887eb3692dd48ded009db2e9f4797a8d201e96892b1",
+        "cdf0ad3b4a9be4f3b5c923982dcdbc290be7ff819c2149b558b23bbdd197b5c0"
+      ]
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 4.827400000067428,
+      "question": "How does Apple describe its products, services, and business activities?",
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_chunk_ids": [
+        "93b36bedac3ec06858bec6dcc64c9936ad7e318e55964ab5f8f7ed4ab122ba53",
+        "2a878334b900b943115c7ebb426ba4659756f8414b202aac753cb03e2bcda518",
+        "9ed5aa219bb1803590eaf4ef0ea66087000a3fc6906cc4037a756df3743f517d",
+        "675bdb5ba539505709eb81cde1c0bb4891a1b61b9fcca9e9c1770d2dcf6b8222",
+        "0a68e34e90e4fcd3e9b14b50ceddddaa6ab2471edb49b5e01c4e527f7e7c1f78"
+      ]
+    },
+    {
+      "first_relevant_rank": 3,
+      "latency_ms": 4.956000000674976,
+      "question": "What factors did management identify as affecting Apple's 2024 net sales performance?",
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved_chunk_ids": [
+        "993edb8b4a4c9eb57c73a6c219489fe9271470d880f561b33e275a30df3427b4",
+        "2a2fdcd0044b44fd0e42207225e579d818e2bb829efa94a92a5a46c49f5ba03e",
+        "5561e2d9d56eb68b1cff7d90ade3bab709fad9d9026c7aeddfc160c3e4cdc303",
+        "00c6673d60977d9f83bbc7ca18cfbddee4838430a54385f1d1fa2d638427a8e3",
+        "0416d85c7d6f6ff7c3283e5c4c85727831bf56a52eac9797c85ce4173914e562"
+      ]
+    },
+    {
+      "first_relevant_rank": 1,
+      "latency_ms": 5.314200003340375,
+      "question": "How did Apple explain quarterly net sales and operating performance for the period ended June 2024?",
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved_chunk_ids": [
+        "0ff4ab0c03e6887e5439c6a1a9d23de238cfabfc0f4928d5305056ea66271bbe",
+        "69055253db35aa21f32cc3bf50f26055732512c59f1a38c6e5416324a8864f6f",
+        "2a2fdcd0044b44fd0e42207225e579d818e2bb829efa94a92a5a46c49f5ba03e",
+        "7b7bd35d27a0683292fa1d1bc679a5d810443155623d7bdcc1ec416e8279e309",
+        "203d07090b14bbc1737463e46d9d286b52145746d79bbeb33ea812b4116768ac"
+      ]
+    }
+  ],
+  "query_count": 4,
+  "recall_at_k": 1.0,
+  "top_k": 5
+}
