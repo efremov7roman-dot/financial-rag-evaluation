@@ -1,8 +1,8 @@
-# Financial RAG V2 release candidate scope
+# Financial RAG V2 public scope
 
-This V2 pull-request candidate was assembled from commit `ebf6c3b` with
+The V2 public file set was assembled from commit `ebf6c3b` with
 documentation updates and a source-only CI workflow. The independently reviewed
-archive remains unchanged. `release_files.json` enumerates the proposed Git
+archive remains unchanged. `release_files.json` enumerates the published Git
 files and their SHA-256 values (except the manifest itself).
 All executable source, tests, datasets, and historical benchmark results are
 byte-identical to that commit.
@@ -65,11 +65,11 @@ Never add `.env`, local credentials, curator records, sealed V4 candidate
 final cases, raw judge responses, model weights, SEC HTML cache, dense/XBRL
 indexes, Python environments, test caches, or local logs. The worktree's
 `.gitignore` now explicitly protects the sealed V4 candidate-final files and
-curator access record; this V2 candidate includes only the committed baseline
+curator access record; the public V2 tree includes only the committed baseline
 ignore rules because the V4 data is absent entirely.
 
-## Publication decision
+## Publication boundary
 
-This is a **reviewable, scope-limited pull-request candidate**, not a merged
-GitHub release. Review the PR diff and CI result before any merge. Keep the
-local experimental work and frozen artifacts in the original workspace.
+This public scope covers the validated V2 functionality and historical V2
+benchmark artifacts described above. Local experimental work and frozen V3/V4
+artifacts remain in the separate development workspace.

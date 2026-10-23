@@ -5,10 +5,10 @@ company and period routing, deterministic XBRL calculations, and source-level pr
 The public V2 scope is measured against a frozen benchmark; narrative queries return evidence,
 not generated financial advice.
 
-> **Release candidate scope:** this repository contains the validated V2 retrieval
+> **V2 scope:** this repository contains the validated V2 retrieval
 > benchmark and deterministic SEC XBRL answer path. V3/V4 local language-model
 > generation, semantic verification, the GPT-OSS judge, and the development
-> pilot are outside this candidate. No Basic-versus-Verified improvement or
+> pilot are outside this release. No Basic-versus-Verified improvement or
 > judge reliability claim is made. See [release scope](docs/RELEASE_SCOPE.md).
 
 The included [MIT license](LICENSE) covers the code. SEC filings and local model weights are

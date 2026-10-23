@@ -1,6 +1,6 @@
-# Release-candidate artifact audit
+# V2 artifact audit
 
-The candidate's README and Markdown docs have **zero broken local Markdown
+The V2 README and Markdown docs have **zero broken local Markdown
 links**. The path audit below covers all local `data/`, `experiments/`, and
 `docs/` references in those documents. File sizes are bytes in this package.
 The included files are from committed `ebf6c3b`, except the release
