@@ -1,5 +1,10 @@
 # Architecture
 
+This release candidate contains the V2 retrieval, deterministic financial
+fact, and evidence-provenance paths below. Local LLM generation and the
+experimental V3/V4 judge pipeline are outside its build and benchmark claims.
+See [release scope](RELEASE_SCOPE.md) for inclusion and limitations.
+
 ## Foundation
 
 The package currently has three intentionally small responsibilities:
