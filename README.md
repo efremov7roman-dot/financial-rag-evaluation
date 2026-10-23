@@ -1,8 +1,18 @@
-# Financial RAG Retrieval & Evaluation System
+# Financial RAG — Evidence-Grounded SEC Retrieval & XBRL Analytics
 
-An evaluation-first retrieval system for SEC filings. It combines semantic and lexical search,
-metadata-aware routing, deterministic XBRL calculations, and source-level provenance—and measures
-each design choice on a frozen benchmark instead of presenting an untested RAG demo.
+An evaluation-first Python project for SEC filings. It combines semantic and lexical search,
+company and period routing, deterministic XBRL calculations, and source-level provenance.
+The public V2 scope is measured against a frozen benchmark; narrative queries return evidence,
+not generated financial advice.
+
+> **Release candidate scope:** this repository contains the validated V2 retrieval
+> benchmark and deterministic SEC XBRL answer path. V3/V4 local language-model
+> generation, semantic verification, the GPT-OSS judge, and the development
+> pilot are outside this candidate. No Basic-versus-Verified improvement or
+> judge reliability claim is made. See [release scope](docs/RELEASE_SCOPE.md).
+
+The included [MIT license](LICENSE) covers the code. SEC filings and local model weights are
+downloaded separately and are not bundled with this repository.
 
 ## Results
 
@@ -21,7 +31,11 @@ each design choice on a frozen benchmark instead of presenting an untested RAG d
 - **1.000 citation accuracy and 1.000 evidence accuracy** on those 27 labeled cases
 
 The authoritative results are in
-[`experiments/benchmark_v2/final_benchmark.json`](experiments/benchmark_v2/final_benchmark.json).
+[`experiments/benchmark_v2/final_benchmark.json`](experiments/benchmark_v2/final_benchmark.json),
+with methodology and denominators in [Benchmark V2](docs/BENCHMARK.md). These
+are historical results on the frozen 150-question retrieval and 27-question
+financial-answer suites, not a newly rerun benchmark or a claim about other
+issuers or narrative answer generation.
 
 ## Problem
 
@@ -146,7 +160,7 @@ demo.
 ## Quick Start
 
 Python 3.11+ is required. SEC ingestion also requires a descriptive User-Agent with contact
-information.
+information. The commands below use PowerShell; see the note after them for macOS/Linux.
 
 ```powershell
 git clone https://github.com/efremov7roman-dot/financial-rag-evaluation.git
@@ -156,6 +170,13 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
+
+# The source-only checks need no SEC downloads, index, or local model.
+financial-rag info
+python -m pytest -q
+python -m ruff check .
+python -m ruff format --check .
+python -m mypy --strict src tests
 
 Copy-Item .env.example .env
 # Set FINANCIAL_RAG_SEC_USER_AGENT in .env, for example:
@@ -170,15 +191,12 @@ financial-rag build-fact-index
 financial-rag query-hybrid "What risks could materially affect Apple's business?" --top-k 5
 financial-rag ask-financial "What was Apple Inc. revenue in 2025 annual filing?"
 
-# Validate the project.
-pytest
-ruff check .
-ruff format --check .
-mypy
 ```
 
 On macOS/Linux, activate with `source .venv/bin/activate`. No external database is required; the
 first index build downloads the configured local ONNX embedding model.
+The query commands are optional demos after ingestion and index building;
+they require public SEC downloads and model weights. Tests do not.
 
 ## Reproducing the Benchmark
 
